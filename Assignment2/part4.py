@@ -14,4 +14,4 @@ totalPayment = (L - 1) * tentativeM + remainder
 
 M = totalPayment / L
 
-print(int(M))
+print('%1.0f' % M)  # or can use int(M)
