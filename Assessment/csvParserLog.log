@@ -1,0 +1,30 @@
+INFO:root:Attempting to parse expedia_report_monthly_january_2018.xlsx for a month and year in filename
+INFO:root:Successfully parsed inputname for month and year: january, 2018
+INFO:root:Searching for pattern 2018-01 in column A
+INFO:root:Found 2018-01-01 00:00:00 matching 2018-01 on A12 in Summary Rolling MoM
+INFO:root:Calls offered: 16915
+	Abandon after 30s: 2.32%
+	FCR: 86.50%
+	DSAT: 14.20%
+	CSAT: 78.30%
+INFO:root:Searching for pattern 2018-01|january in row 1
+INFO:root:Found 2018-01-01 00:00:00 matching 2018-01|january on C1
+INFO:root:In Net Promoter Score : 
+	Promoters >= 200 : good
+	Passives < 100 : bad
+	Detractors < 100 : bad
+INFO:root:Attempting to parse expedia_report_monthly_march_2018.xlsx for a month and year in filename
+INFO:root:Successfully parsed inputname for month and year: march, 2018
+INFO:root:Searching for pattern 2018-03 in column A
+INFO:root:Found 2018-03-18 00:00:00 matching 2018-03 on A13 in Summary Rolling MoM
+INFO:root:Calls offered: 22343
+	Abandon after 30s: 3.05%
+	FCR: 86.00%
+	DSAT: 18.00%
+	CSAT: 74.40%
+INFO:root:Searching for pattern 2018-03|march in row 1
+INFO:root:Found march matching 2018-03|march on B1
+INFO:root:In Net Promoter Score : 
+	Promoters >= 200 : good
+	Passives < 100 : bad
+	Detractors < 100 : bad
