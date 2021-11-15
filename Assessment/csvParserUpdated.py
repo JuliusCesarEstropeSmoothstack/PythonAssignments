@@ -1,6 +1,7 @@
 import logging
 from openpyxl import load_workbook
 from openpyxl.utils.cell import coordinate_from_string
+from openpyxl.reader.excel import InvalidFileException
 from month_enum import Month
 from Assessment import csvUtils
 
@@ -23,7 +24,11 @@ while not validInput:
 
         logging.info(f'Successfully parsed inputname for month and year: {month}, {year}')
         validInput = True
-    except FileExistsError:
+    except InvalidFileException:
+        message = f'Workbook {workbookName} is not of a supported filetype. Enter a different name.'
+        logging.fatal(message)
+        print(message)
+    except FileNotFoundError:
         message = f'Workbook {workbookName} does not exist. Enter a different name.'
         logging.fatal(message)
         print(message)
